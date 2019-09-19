@@ -45,6 +45,7 @@
 						<td th:text="${cliente.createAt}"></td>
 						<td> 
 							<a th:href="@{/form/} + ${cliente.id}" th:text="Editar" class="badge badge-warning"></a> 
+							<a th:href="@{/eliminar/} + ${cliente.id}" th:text="Eliminar" class="badge badge-danger" onclick="return confirm('Esta seguro que desea eliminar?')"></a> 
 						</td>
 					</tr>
 				</tbody>
